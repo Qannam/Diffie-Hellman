@@ -1,0 +1,140 @@
+.seconds1 {
+    visibility: hidden;
+    position: relative;
+    -webkit-animation-name: seconds1; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: seconds1;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes seconds1 {
+    from {}
+    to {visibility: visible;}
+}
+/* Standard syntax */
+@keyframes seconds1 {
+    from {}
+    to {visibility: visible;}
+}
+
+.seconds2 {
+    visibility: hidden;
+    position: relative;
+    -webkit-animation-name: seconds2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: seconds3;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes seconds2 {
+    from {}
+    to {visibility: visible;}
+}
+/* Standard syntax */
+@keyframes seconds2 {
+    from {}
+    to {visibility: visible;}
+}
+
+.seconds3 {
+    visibility: hidden;
+    position: relative;
+    -webkit-animation-name: seconds3; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 3s; /* Safari 4.0 - 8.0 */
+    animation-name: seconds3;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes seconds3 {
+    from {}
+    to {visibility: visible;}
+}
+/* Standard syntax */
+@keyframes seconds3 {
+    from {}
+    to {visibility: visible;}
+}
+
+.seconds4 {
+    visibility: hidden;
+    position: relative;
+    -webkit-animation-name: seconds4; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: seconds4;
+    animation-delay: 4s;
+    animation-fill-mode: both;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes seconds4 {
+    from {}
+    to {visibility: visible;}
+}
+/* Standard syntax */
+@keyframes seconds4 {
+    from {}
+    to {visibility: visible;}
+}
+
+.seconds5 {
+    visibility: hidden;
+    position: relative;
+    -webkit-animation-name: seconds5; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 5s; /* Safari 4.0 - 8.0 */
+    animation-name: seconds5;
+    animation-delay: 5s;
+    animation-fill-mode: both;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes seconds5 {
+    from {}
+    to {visibility: visible;}
+}
+/* Standard syntax */
+@keyframes seconds5 {
+    from {}
+    to {visibility: visible;}
+}
+
+.seconds6 {
+    visibility: hidden;
+    position: relative;
+    -webkit-animation-name: seconds6; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 6s; /* Safari 4.0 - 8.0 */
+    animation-name: seconds6;
+    animation-delay: 6s;
+    animation-fill-mode: both;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes seconds6 {
+    from {}
+    to {visibility: visible;}
+}
+/* Standard syntax */
+@keyframes seconds6 {
+    from {}
+    to {visibility: visible;}
+}
+
+.seconds7 {
+    visibility: hidden;
+    position: relative;
+    -webkit-animation-name: seconds7; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 7s; /* Safari 4.0 - 8.0 */
+    animation-name: seconds7;
+    animation-delay: 7s;
+    animation-fill-mode: both;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes seconds7 {
+    from {}
+    to {visibility: visible;}
+}
+/* Standard syntax */
+@keyframes seconds7 {
+    from {}
+    to {visibility: visible;}
+}
+
