@@ -35,7 +35,7 @@ class diffie_hellmanController extends Controller
         else
             $Xb = $this->random_secret_key($q);
 
-
+        // if the user enter prime_number the validation will be based on this value
         if ($request->prime_number){
             $validatedData = $request->validate([
                 'prime_number' => ['gt:1', 'lt:1001', new Prime, 'nullable', 'numeric'],
@@ -44,7 +44,18 @@ class diffie_hellmanController extends Controller
                 'secret_key_b' => ['gt:-1', 'lt:prime_number', 'nullable', 'numeric'],
             ]);
         }
+
+        // if the user did not enter prime_number but inter any another field the prime_number will be required
+        elseif (!$request->prime_number && ($request->primitive_root or $request->secret_key_a or $request->secret_key_b)){
+            $validatedData = $request->validate([
+                'prime_number' => ['bail','required','gt:1', 'lt:1001', new Prime,  'numeric'],
+                'primitive_root' => ['gt:0', 'lt:'.$q, 'nullable', 'numeric'],
+                'secret_key_a' => ['gt:-1', 'lt:'.$q, 'nullable', 'numeric'],
+                'secret_key_b' => ['gt:-1', 'lt:'.$q, 'nullable', 'numeric'],
+            ]);
+        }
         else{
+            // if the user did not enter prime_number or any field the validation will be based generated random key
             $validatedData = $request->validate([
                 'prime_number' => ['gt:1', 'lt:1001', new Prime, 'nullable', 'numeric'],
                 'primitive_root' => ['gt:0', 'lt:'.$q, 'nullable', 'numeric'],
@@ -53,8 +64,6 @@ class diffie_hellmanController extends Controller
             ]);
         }
 
-
-//        dd($q , $a , $Xa , $Xb);
 
 
         $public_key = $this->compute_public_key($q, $a, $Xa, $Xb);
